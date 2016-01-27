@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>TODO</id>
+    <version>$version$</version>
+    <authors>Mattias Kindborg</authors>
+    <title>TODO</title>
+    <language>en-US</language>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <projectUrl>https://github.com/FantasticFiasco/vs-ignition</projectUrl>
+    <iconUrl>TODO</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>TODO</description>
+    <tags>TODO</tags>
+  </metadata>
+  <files>
+  </files>
+</package>
