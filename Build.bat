@@ -1,4 +1,3 @@
 @echo off
 
-cd src
-.nuget\NuGet.exe pack vs-ignition.nuspec
+src\.nuget\NuGet.exe pack src\vs-ignition.nuspec
