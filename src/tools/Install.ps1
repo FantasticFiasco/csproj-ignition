@@ -21,7 +21,7 @@ $item.Properties.Item("BuildAction").Value = [int]4
 ###################################
 
 # This is what we want to add to the project
-#  <PropertyGroup Label="VS-Ignition">
+#  <PropertyGroup Label="Ignition">
 #    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
 #    <RunCodeAnalysis>true</RunCodeAnalysis>
 #  </PropertyGroup>
@@ -29,7 +29,7 @@ $item.Properties.Item("BuildAction").Value = [int]4
 Write-Host "Configuring Code Analysis"
 $projectRootElement = [Microsoft.Build.Construction.ProjectRootElement]::Open($project.FullName)
 $propertyGroup = $projectRootElement.AddPropertyGroup()
-$propertyGroup.Label = "VS-Ignition"
+$propertyGroup.Label = "Ignition"
 $propertyGroup.AddProperty('CodeAnalysisRuleSet', 'AllRules.ruleset')
 $propertyGroup.AddProperty('RunCodeAnalysis', 'true')
 $projectRootElement.Save()

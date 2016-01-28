@@ -1,11 +1,11 @@
 param($installPath, $toolsPath, $package, $project)
 
 function RemoveCodeAnalysisPropertyGroups($projectRootElement) {
-    # If there are any PropertyGroups with a label of "VS-Ignition" they will be removed
+    # If there are any PropertyGroups with a label of "Ignition" they will be removed
     $propertyGroupsToRemove = @()
     
     foreach($propertyGroup in $projectRootElement.PropertyGroups) {
-        if($propertyGroup.Label -and [string]::Compare("VS-Ignition", $propertyGroup.Label, $true) -eq 0) {
+        if($propertyGroup.Label -and [string]::Compare("Ignition", $propertyGroup.Label, $true) -eq 0) {
             # Remove this property group
             $propertyGroupsToRemove += $propertyGroup
         }
