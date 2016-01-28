@@ -22,6 +22,7 @@ function RemoveCodeAnalysisPropertyGroups($projectRootElement) {
 
 Write-Host ("Uninstalling Visual Studio Ignition from project " + $project.FullName)
 $project.Save()
+$projectRootElement = [Microsoft.Build.Construction.ProjectRootElement]::Open($project.FullName)
 
 
 ###################################
@@ -29,9 +30,7 @@ $project.Save()
 ###################################
 
 Write-Host "Removing configuration of Code Analysis"
-$projectRootElement = [Microsoft.Build.Construction.ProjectRootElement]::Open($project.FullName)
 RemoveCodeAnalysisPropertyGroups -projectRootElement $projectRootElement
-$projectRootElement.Save()
 
 
 ###################################
