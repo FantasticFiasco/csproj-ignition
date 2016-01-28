@@ -26,7 +26,7 @@ build:
 #       build configuration       #
 #---------------------------------#
 build_script:
-  - cmd: nuget pack src\csproj-ignition.nuspec -Version {version}
+  - cmd: nuget pack src\csproj-ignition.nuspec -Version $(appveyor_build_version)
 
 
 #---------------------------------#
