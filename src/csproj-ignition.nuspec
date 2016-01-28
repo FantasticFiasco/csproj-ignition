@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>TODO</id>
+    <id>csproj-ignition</id>
     <version>$version$</version>
     <authors>Mattias Kindborg</authors>
-    <title>TODO</title>
+    <title>Visual Studio Project Ignition</title>
     <language>en-US</language>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <projectUrl>https://github.com/FantasticFiasco/csproj-ignition</projectUrl>
-    <!--<iconUrl>TODO</iconUrl>-->
+    <iconUrl>https://raw.githubusercontent.com/FantasticFiasco/csproj-ignition/master/design/EngineStartButton_64x64.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>TODO</description>
-    <tags>TODO</tags>
+    <description>A NuGet package initializing your Visual Studio project with all configuration needed.</description>
+    <tags>vs visual studio csproj project ignition</tags>
   </metadata>
   <files>
     <file src="content\*.*" target="content\" />
