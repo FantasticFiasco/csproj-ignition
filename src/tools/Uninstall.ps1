@@ -1,6 +1,6 @@
 param($installPath, $toolsPath, $package, $project)
 
-function RemoveCodeAnalysisPropertyGroups($projectRootElement) {
+function RemoveIgnitionPropertyGroups($projectRootElement) {
     # If there are any PropertyGroups with a label of "Ignition" they will be removed
     $propertyGroupsToRemove = @()
     
@@ -30,7 +30,7 @@ $projectRootElement = [Microsoft.Build.Construction.ProjectRootElement]::Open($p
 ###################################
 
 Write-Host "Removing configuration of Code Analysis"
-RemoveCodeAnalysisPropertyGroups -projectRootElement $projectRootElement
+RemoveIgnitionPropertyGroups -projectRootElement $projectRootElement
 
 
 ###################################
