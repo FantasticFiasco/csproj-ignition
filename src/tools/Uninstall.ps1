@@ -26,7 +26,7 @@ $projectRootElement = [Microsoft.Build.Construction.ProjectRootElement]::Open($p
 
 
 ###################################
-#          Code Analysis          #
+#     Code Analysis & Signing     #
 ###################################
 
 Write-Host "Removing configuration of Code Analysis"
