@@ -12,7 +12,7 @@
 
 - Ever hesitated to create a new Visual Studio project because the sheer amount of configuration needed would be enough to get you out of your zone? 
 
-- Ever been frustrated because your new project doesn't work, and you don't know why but guess it is missing some _magic_ configuration?
+- Ever been frustrated because your new project doesn't work, and you have no idea why but guess it is missing some magic configuration?
 
 ## Meet Ignition!
 
